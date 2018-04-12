@@ -69,4 +69,4 @@ bot.on("ready", function() {
     console.log("MentaBot Succes Connected to Menta PvP")
 })
 
-bot.login(process.env.TOKEN)
+bot.login(process.env.TOKENN)
