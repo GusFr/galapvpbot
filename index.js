@@ -10,7 +10,7 @@ bot.on('guildMemberAdd', function (member) {
 })
 
 bot.on('guildMemberAdd', function (member) {
-    guildMember.setRoles(['434043344104980496'])
+    Member.setRoles(['434043344104980496'])
     .then(console.log)
     .catch(console.error);
 })
