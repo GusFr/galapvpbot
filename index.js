@@ -5,7 +5,12 @@ var prefix = "*";
 
 bot.on('guildMemberAdd', function (member) {
     member.createDM().then(function (channel) {
-        return channel.send('`Bienvenue Sur Menta PvP`' + member.displayName)
+        return channel.send('`Bienvenue Sur Menta PvP` ' + member.displayName)
+    }).catch(console.error)
+})
+
+bot.on('guildMemberAdd', function (message) {
+    message.member.addRole('434043344104980496')
     }).catch(console.error)
 })
 
