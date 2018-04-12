@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 
 var bot = new Discord.Client();
-var prefix = "/";
+var prefix = "*";
 
 bot.on('guildMemberAdd', function (member) {
     member.createDM().then(function (channel) {
@@ -54,9 +54,9 @@ bot.on("message", function (message) {
         var embed = new Discord.RichEmbed()
             .setTitle("Liste des Commandes")
             .setDescription("Liste des commandes du BOT")
-            .addField("- /help","**Page d'aide**", true)
-            .addField("- /kick @Joueur", "**Expulsez Un Joueur**", true)
-            .addField("- /ban @Joueur", "**Bannir Un Joueur**", true)
+            .addField("- *help","**Page d'aide**", true)
+            .addField("- *kick @Joueur", "**Expulsez Un Joueur**", true)
+            .addField("- *ban @Joueur", "**Bannir Un Joueur**", true)
             .setColor("0x009127")
             .setFooter("©Menta PvP - 2018 Tout droits réservés")
         message.channel.sendEmbed(embed);
