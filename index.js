@@ -9,9 +9,10 @@ bot.on('guildMemberAdd', function (member) {
     }).catch(console.error)
 })
 
-bot.on('guildMemberAdd', function (message) {
-    message.member.addRole('434043344104980496')
-    }).catch(console.error)
+bot.on('guildMemberAdd', function (member) {
+    guildMember.setRoles(['391156570408615936'])
+    .then(console.log)
+    .catch(console.error);
 })
 
 bot.on('message', message => {
