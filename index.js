@@ -38,7 +38,7 @@ bot.on('message', message => {
     
     if (command === prefix + "ban") {
         let modRole = message.guild.roles.find("name", "permban")
-        if(!message.member.roles.has(modRole.id)) {
+        if(!message.member.roles.has(modRole)) {
             return  message.reply("Erreur: Tu n'as pas la permission").catch(console.error)
         }
         const member = message.mentions.members.first();
