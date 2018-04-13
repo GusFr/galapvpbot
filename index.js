@@ -16,7 +16,7 @@ bot.on('message', message => {
 
     if (command === prefix + "kick") {
         let modRole = message.guild.roles.find("name", "permkick");
-        if(!message.member.roles.has(modRole.id)) {
+        if(!message.member.roles.has(modRole)) {
             return message.reply("Erreur: Tu n'as pas la permission!").catch(console.error)
         }
         if(message.mentions.users.size === 0) {
