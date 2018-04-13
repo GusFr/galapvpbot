@@ -65,8 +65,8 @@ bot.on("message", function (message) {
 })
 
 bot.on("ready", function() {
-    bot.user.setActivity("MentaBot : Tapez /help");
-    console.log("MentaBot Succes Connected to Menta PvP")
+    bot.user.setActivity("MentaBot : Tapez *help");
+    console.log("MentaBot est connecté")
 })
 
 bot.login(process.env.TOKENN)
