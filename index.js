@@ -9,12 +9,6 @@ bot.on('guildMemberAdd', function (member) {
     }).catch(console.error)
 })
 
-bot.on('guildMemberAdd', function (member) {
-    Member.setRoles(['434043344104980496'])
-    .then(console.log)
-    .catch(console.error);
-})
-
 bot.on('message', message => {
     let command = message.content.split(" ")[0];
     const args = message.content.slice(prefix.length).split(/ +/);
