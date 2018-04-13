@@ -55,8 +55,8 @@ bot.on("message", function (message) {
             .setTitle("Liste des Commandes")
             .setDescription("Liste des commandes du BOT")
             .addField("- *help","**Page d'aide**", true)
-            .addField("- *kick @Joueur", "**Expulsez Un Joueurdu serveur, elle peut ensuite revenir.**", true)
-            .addField("- *ban @Joueur", "**Bannir Un Joueur définitivement du serveur, elle ne devrait pas revenir sauf si elle change de comtpe.**", true)
+            .addField("- *kick @Joueur", "**Expulsez Un Joueur du serveur, il peut ensuite revenir.**", true)
+            .addField("- *ban @Joueur", "**Bannir Un Joueur définitivement du serveur, il ne devrait pas revenir sauf si elle change de comtpe.**", true)
             .setColor("0x009127")
             .setFooter("©Menta PvP - 2018 Tout droits réservés")
         message.channel.sendEmbed(embed);
